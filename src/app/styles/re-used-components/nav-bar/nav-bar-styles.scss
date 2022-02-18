@@ -1,0 +1,131 @@
+@use "../../universal/" as ul;
+
+@mixin social-media-buttons {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+mat-toolbar {
+  width: 100%;
+  height: 86px;
+  background-color: ul.$deep-green;
+}
+
+.row {
+  display: flex;
+  //width: 100%;
+}
+
+.gmail-icon {
+  width: 20px;
+  height: 13.85px;
+  object-fit: cover;
+}
+
+.github-icon {
+  width: 20px;
+  height: 18px;
+  object-fit: cover;
+}
+
+.linkedin-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.social-icon-box-gmail {
+  @include social-media-buttons;
+  background-color: ul.$soft-pink;
+}
+
+.social-icon-box-github {
+  @include social-media-buttons;
+  background-color: ul.$neon;
+}
+
+.social-icon-box-linkedin {
+  @include social-media-buttons;
+  background-color: ul.$lavender;
+}
+
+.nav-bar-logo {
+  @include ul.headline-5;
+  font-weight: ul.$bold;
+  color: ul.$neon;
+  text-decoration: none;
+  background-image: none;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+}
+
+.main-menu-link :hover {
+  background-image: url("../../../../assets/images/personal-branding/logo-hover.png");
+  width: 91px;
+  height: 91px;
+  font-size: 0px;
+  object-fit: contain;
+  margin-top: 50px;
+}
+
+@media (max-width: ul.$mobile) {
+  .nav-bar-start-mobile {
+    margin-left: 5px;
+  }
+
+  .nav-bar-end-mobile {
+    margin-right: 5px;
+  }
+
+  .nav-bar-logo {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .gmail-icon {
+    width: 12px;
+    height: 8.85px;
+    object-fit: cover;
+  }
+
+  .github-icon {
+    width: 14px;
+    height: 12px;
+    object-fit: cover;
+  }
+
+  .linkedin-icon {
+    width: 12px;
+    height: 12px;
+    object-fit: cover;
+  }
+
+  .social-icon-box-gmail {
+    width: 20px;
+    height: 20px;
+    background-color: ul.$soft-pink;
+  }
+
+  .social-icon-box-github {
+    width: 20px;
+    height: 20px;
+    background-color: ul.$neon;
+  }
+
+  .social-icon-box-linkedin {
+    width: 20px;
+    height: 20px;
+    background-color: ul.$lavender;
+  }
+
+  .nav-bar-right {
+    margin-right: 10px;
+  }
+}

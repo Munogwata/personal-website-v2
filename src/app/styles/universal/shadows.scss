@@ -1,0 +1,5 @@
+@use "../universal/colors.scss" as cs;
+
+.general-box-shadow {
+  box-shadow: 0px 4px 4px 0px rgba(cs.$black, 0.25);
+}

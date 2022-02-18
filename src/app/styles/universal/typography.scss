@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@400;500;700&family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@400;700&display=swap");
+
+$epilogue: "Epilogue", sans-serif;
+$noto-sans: "Noto Sans", sans-serif;
+$hind-vadodara: "Hind Vadodara", sans-serif;
+$saira: "Saira", sans-serif;
+
+$bold: 700;
+$regular: 400;
+
+@mixin headline-1 {
+  font-family: $epilogue;
+  font-weight: $bold;
+  font-size: 55px;
+}
+
+@mixin headline-2 {
+  font-family: $noto-sans;
+  font-weight: $regular;
+  font-size: 48px;
+}
+
+@mixin headline-3 {
+  font-family: $noto-sans;
+  font-weight: $regular;
+  font-size: 34px;
+}
+
+@mixin headline-4 {
+  font-family: $noto-sans;
+  font-weight: $regular;
+  font-size: 24px;
+}
+
+@mixin headline-5 {
+  font-family: $noto-sans;
+  font-weight: $regular;
+  font-size: 20px;
+}
+
+@mixin headline-6 {
+  font-family: $noto-sans;
+  font-weight: $regular;
+  font-size: 16px;
+}
+
+@mixin subtitle-1 {
+  font-family: $noto-sans;
+  font-weight: $regular;
+  font-size: 18px;
+}
+
+@mixin subtitle-2 {
+  font-family: $noto-sans;
+  font-weight: $regular;
+  font-size: 16px;
+}
+
+@mixin subtitle-3 {
+  font-family: $noto-sans;
+  font-weight: $regular;
+  font-size: 12px;
+}
+
+@mixin body-1 {
+  font-family: $hind-vadodara;
+  font-weight: $regular;
+  font-size: 18px;
+}
+
+@mixin body-2 {
+  font-family: $hind-vadodara;
+  font-weight: $regular;
+  font-size: 16px;
+}
+
+@mixin body-3 {
+  font-family: $hind-vadodara;
+  font-weight: $regular;
+  font-size: 14px;
+}
+
+@mixin caption {
+  font-family: $saira;
+  font-weight: $regular;
+  font-size: 14px;
+}

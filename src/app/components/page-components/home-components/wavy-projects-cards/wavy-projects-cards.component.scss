@@ -1,0 +1,9 @@
+@use "../../../../styles/universal/" as ul;
+@use "../../../../styles/page-components/home-components/project-card.scss" as
+  pd;
+
+@use "../../../../styles/page-components/home-components/tags.scss" as ts;
+
+.end-project {
+  margin-right: 87px;
+}

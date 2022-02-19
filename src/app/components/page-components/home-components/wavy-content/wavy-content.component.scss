@@ -1,0 +1,141 @@
+@use "../../../../styles/page-components/home-components/tags.scss" as ts;
+@use "../../../../styles/universal/" as ul;
+
+$content-width: 400px;
+
+.wavy-container {
+  display: flex;
+
+  width: 90%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wavy-tags-content {
+  margin-left: 63px;
+}
+
+.wavy-content-row1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tags-row1 {
+  display: flex;
+}
+
+.tags-row2 {
+  display: flex;
+  margin-top: 15px;
+}
+
+.column-row1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 63px;
+}
+
+.column-row2 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 105px;
+  margin-left: 20px;
+}
+
+.subheading {
+  @include ul.headline-6;
+  font-weight: ul.$bold;
+  color: ul.$deep-green;
+  margin-bottom: 18px;
+}
+
+.column-row2-header {
+  display: flex;
+  flex-direction: column;
+
+  @include ul.headline-2;
+}
+
+.wavy-logo {
+  width: 57px;
+  height: 42px;
+  object-fit: fit;
+}
+
+.wavy-copy {
+  @include ul.body-1;
+  width: $content-width;
+  height: fit-content;
+}
+
+.wavy-copy-emphasized {
+  @include ul.body-1;
+  width: $content-width;
+  height: fit-content;
+  color: ul.$lavender;
+  font-weight: ul.$bold;
+}
+
+.wavy-highlighted-grey {
+  @include ul.headline-5;
+  width: $content-width;
+  height: fit-content;
+  color: ul.$owl-black;
+  font-weight: ul.$bold;
+}
+
+.wavy-highlighted-black {
+  @include ul.headline-5;
+  width: $content-width;
+  height: fit-content;
+  color: ul.$black;
+  font-weight: ul.$bold;
+}
+
+.button-and-link {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+}
+
+.appear {
+  display: none;
+}
+
+@media (min-width: ul.$mobile) and (max-width: ul.$tablet) {
+  .wavy-content-row1 {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .appear {
+    display: inline-block;
+  }
+
+  .wavy-container {
+    width: 100%;
+  }
+
+  .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+@media (min-width: ul.$tablet) {
+  .column-row2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+  }
+}
